@@ -136,7 +136,42 @@
       </div>
     </div>
   </section>
+<!-- More Images with Captions -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="cool-title title is-3">More Visuals</h2>
 
+      <!-- Image 1 -->
+      <figure class="image">
+        <h2 class="cool-title title is-3">Cross-category affordance generalization results</h2>
+        <img src="static/images/diffusion.png" alt="Example Image 1">
+        <p class="mt-3">
+          <strong>Figure 1:</strong> In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
+        </p>
+      </figure>
+
+      <!-- Image 2 -->
+      <figure class="image mt-5">
+        <h2 class="cool-title title is-3">Adaptation Results</h2>
+        <img src="static/images/adaptation.png" alt="Example Image 2">
+        <!-- <p class="mt-3">
+          <strong>Figure 2:</strong> This shows our initial setup. We use a dual-arm robot to interact with daily objects.
+        </p> -->
+      </figure>
+
+      <!-- Image 3 -->
+      <figure class="image mt-5">
+        <h2 class="cool-title title is-3">Visualization of manipulation results</h2>
+        <img src="static/images/manip_results.png" alt="Example Image 3">
+        <p class="mt-3">
+          <strong>Figure 3:</strong> In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
+        </p>
+      </figure>
+
+    </div>
+  </div>
+</section>
 
   <!-- Video carousel -->
   <section class="hero is-small">
@@ -145,22 +180,25 @@
         <h2 class="cool-title title is-3">Real-world Demo</h2>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <video poster="" id="video1" autoplay controls muted loop style="width: 80%; height: auto;"></video>
               <source src="static/videos/open_scissor.mp4" type="video/mp4">
             </video>
-            <div class="video-caption">Open Scissor Demo</div>
+            <div class="video-caption">Opening</div>
           </div>
           <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+              <video poster="" id="video2" autoplay controls muted loop style="width: 80%; height: auto;"></video>
               <source src="static/videos/uncap_cup.mp4" type="video/mp4">
             </video>
-            <div class="video-caption">Uncap Cup Demo</div>
+            <div class="video-caption">Uncapping</div>
           </div>
           <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <!-- <video poster="" id="video3" autoplay controls muted loop height="100%"> -->
+              <video poster="" id="video3" autoplay controls muted loop style="width: 80%; height: auto;"></video>
               <source src="static/videos/unfold_box.mp4" type="video/mp4">
             </video>
-            <div class="video-caption">Unfold Box Demo</div>
+            <div class="video-caption">Unfolding</div>
           </div>
         </div>
       </div>

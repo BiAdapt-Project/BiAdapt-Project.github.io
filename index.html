@@ -133,6 +133,10 @@
       <div class="hero-body">
         <h2 class="cool-title title is-3">Pipeline</h2>
         <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/>
+        <p class="mt-3">
+          <strong>(Left)</strong> We collect quantities of data in simulator, and train the Action Learning Network to build our supporting set. The corresponding affordance and point-level action of training categories serve as our prior knowledge. <strong>(Middle)</strong> When facing an unseen object from novel categories and a task, we retrieve the familiar ones from our training categories within the same task. We leverage the powerful semantic correspondence capability in the diffusion model to achieve cross-category affordance generalization. Particularly, we often get multiple contact-point pair candidates. <strong>(Lower Right)</strong> Then, we sample the affordance candidates and action directions proposed by pre-trained Action Learning Network to execute. After few-shot learning, our network is fine-tuned by the interaction results to adapt the novel categories. <strong>(Upper Right)</strong>Finally, our fine-tuned framework can facilitate manipulating unseen instances from novel categories with better performance.
+          <!-- <strong></strong>  -->
+        </p>
       </div>
     </div>
   </section>
@@ -144,8 +148,9 @@
 
       <!-- Image 1 -->
       <figure class="image">
-        <h2 class="cool-title title is-3">Cross-category affordance generalization results</h2>
-        <img src="static/images/diffusion.png" alt="Example Image 1">
+        <!-- <h2 class="cool-title title is-3">Cross-category affordance generalization results</h2> -->
+        <h2 class="title is-5 has-text-info has-text-weight-semibold is-rounded">Cross-category affordance generalization results</h2>
+        <img src="static/images/diffusion.png" alt="Example Image 1" style="max-width: 500px; width: 100%;" />
         <p class="mt-3">
           <strong>Figure 1:</strong> In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
         </p>
@@ -153,17 +158,21 @@
 
       <!-- Image 2 -->
       <figure class="image mt-5">
-        <h2 class="cool-title title is-3">Adaptation Results</h2>
-        <img src="static/images/adaptation.png" alt="Example Image 2">
-        <!-- <p class="mt-3">
+        <!-- <h2 class="cool-title title is-3">Adaptation Results</h2> -->
+        <h2 class="title is-5 has-text-info has-text-weight-semibold is-rounded">Adaptation Results</h2>
+        
+        <img src="static/images/adaptation.png" alt="Example Image 2" style="max-width: 500px; width: 100%;" />
+        <p class="mt-3">
           <strong>Figure 2:</strong> This shows our initial setup. We use a dual-arm robot to interact with daily objects.
-        </p> -->
+        </p>
       </figure>
 
       <!-- Image 3 -->
       <figure class="image mt-5">
-        <h2 class="cool-title title is-3">Visualization of manipulation results</h2>
-        <img src="static/images/manip_results.png" alt="Example Image 3">
+        <!-- <h2 class="cool-title title is-3">Visualization of manipulation results</h2> -->
+
+        <h2 class="title is-5 has-text-info has-text-weight-semibold is-rounded">Visualization of manipulation results</h2>
+        <img src="static/images/manip_results.png" alt="Example Image 3" style="max-width: 500px; width: 100%;" />
         <p class="mt-3">
           <strong>Figure 3:</strong> In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
         </p>
@@ -181,21 +190,21 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-video1">
             <!-- <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <video poster="" id="video1" autoplay controls muted loop style="width: 80%; height: auto;"></video>
+            <video poster="" id="video1" autoplay controls muted loop style="width: 80%; height: auto;">
               <source src="static/videos/open_scissor.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Opening</div>
           </div>
           <div class="item item-video2">
             <!-- <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-              <video poster="" id="video2" autoplay controls muted loop style="width: 80%; height: auto;"></video>
+              <video poster="" id="video2" autoplay controls muted loop style="width: 80%; height: auto;">
               <source src="static/videos/uncap_cup.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Uncapping</div>
           </div>
           <div class="item item-video3">
             <!-- <video poster="" id="video3" autoplay controls muted loop height="100%"> -->
-              <video poster="" id="video3" autoplay controls muted loop style="width: 80%; height: auto;"></video>
+              <video poster="" id="video3" autoplay controls muted loop style="width: 80%; height: auto;">
               <source src="static/videos/unfold_box.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Unfolding</div>

@@ -159,3 +159,15 @@ section.hero:first-of-type {
 section.hero.is-small.is-light {
   margin-top: 0.2rem;
 }
+.results-carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-carousel .video-caption {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}

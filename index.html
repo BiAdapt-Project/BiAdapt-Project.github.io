@@ -155,7 +155,7 @@
         </h2> -->
         <img src="static/images/diffusion.png" alt="Example Image 1" />
         <p class="mt-3">
-          <strong>Figure 1:</strong> In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
+          In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
         </p>
       </figure>
 
@@ -163,9 +163,7 @@
       <figure class="image mt-5">
         <!-- <h2 class="cool-title title is-3">Adaptation Results</h2> -->
         <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Adaptation Results</h2>
-        <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
-          Adaptation Results -->
-        <!-- </h2> -->
+        
         <img src="static/images/adaptation.png" alt="Example Image 2" />
         <!-- <p class="mt-3">
           <strong>Figure 2:</strong> This shows our initial setup. We use a dual-arm robot to interact with daily objects.
@@ -181,10 +179,65 @@
         </h2> -->
         <img src="static/images/manip_results.png" alt="Example Image 3" />
         <p class="mt-3">
-          <strong>Figure 3:</strong> In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
+          In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
         </p>
       </figure>
 
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="cool-title title is-3">Real Experiment Setup</h2>
+
+      <div class="columns is-vcentered">
+        <!-- Left image (PDF rendered as image) -->
+        <div class="column is-half has-text-centered">
+          <!-- <p><strong>(a)</strong> Robot Setup</p> -->
+          <h2 class="title is-4 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">
+            (a) Robot Setup
+          </h2>
+          <figure class="image is-4by3">
+            <img src="static/images/real_setup.jpg" alt="real exp setup">
+          </figure>
+        </div>
+
+        <!-- Right image -->
+        <div class="column is-half has-text-centered">
+          <!-- <p><strong>(b)</strong> Objects</p> -->
+          <h2 class="title is-4 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">
+            (b) Objects
+          </h2>
+          <figure class="image is-4by3">
+            <img src="static/images/real_obj_setup.jpg" alt="Normal image">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Global caption -->
+      <p class="mt-4 has-text-centered">
+        (a) We use two UFactory xArm6 for manipulation and two RealSense D435 cameras to cap- ture RGBD observations. <br>
+        (b) We test on a diverse set of objects.  
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="cool-title title is-3">Visualization of real-world experiments</h2>
+      <img src="static/images/real_process.png" alt="MY ALT TEXT"/>
+      <p class="mt-3">
+        Each row represents a different task: 
+        <strong>(top)</strong> unfolding, <strong>(middle)</strong> opening, and <strong>(bottom)</strong>  uncapping.<br>
+        For each row, from left to right: (a) the target object from unseen categories; (b) contact points of training categories; (c) contact points mapped on novel categories; 
+        (d) the initial pose of the grippers; (e) the final result after manipulation.
+        <!-- <strong></strong>  -->
+      </p>
     </div>
   </div>
 </section>
@@ -198,21 +251,21 @@
           <div class="item item-video1">
             <!-- <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
             <video poster="" id="video1" autoplay controls muted loop style="width: 80%; height: auto;">
-              <source src="static/videos/open_scissor.mp4" type="video/mp4">
+              <source src="static/videos/Open_10X_fd.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Opening</div>
           </div>
           <div class="item item-video2">
             <!-- <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
               <video poster="" id="video2" autoplay controls muted loop style="width: 80%; height: auto;">
-              <source src="static/videos/uncap_cup.mp4" type="video/mp4">
+              <source src="static/videos/Uncap_10X_fd.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Uncapping</div>
           </div>
           <div class="item item-video3">
             <!-- <video poster="" id="video3" autoplay controls muted loop height="100%"> -->
               <video poster="" id="video3" autoplay controls muted loop style="width: 80%; height: auto;">
-              <source src="static/videos/unfold_box.mp4" type="video/mp4">
+              <source src="static/videos/Unfold_10X_fd.mp4" type="video/mp4">
             </video>
             <div class="video-caption">Unfolding</div>
           </div>

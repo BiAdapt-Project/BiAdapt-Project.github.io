@@ -82,22 +82,45 @@
     </div>
   </section>
   
-  <!-- Youtube video -->
-  <section class="hero is-small is-light">
+
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             
             <div class="publication-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1E_bBDtV57c?si=HBvSw12-VRB5nCKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+             <iframe src="https://www.youtube.com/embed/MtRbVvZyFyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
+          </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End youtube video -->
+  </section> -->
+ 
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- TODO: Replace with your YouTube video ID -->
+            <!-- <iframe src="https://www.youtube.com/embed/MtRbVvZyFyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MtRbVvZyFyA?si=B38Y5TXMLHDIW0oF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/MtRbVvZyFyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End youtube video -->
 
   <!-- Teaser-->
   <section class="hero teaser">
@@ -118,7 +141,8 @@
           <h2 class="cool-title title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Bimanual manipulation tasks, such as unfolding a box or opening scissors, are prevalent in daily life and demand approaches that account for collaboration between both hands. These tasks, however, present substantial difficulties due to the need for large amounts of training data. Additionally, when manipulating novel object categories, the variation in geometric characteristics and physical properties across categories complicates generalization. To address these challenges, we present Bi-Adapt, a novel framework designed for efficient learning of bimanual manipulation for novel categories. Bi-Adapt leverages semantic correspondence from diffusion models, known for their strong generalization abilities, to transfer affordance to new categories. Furthermore, it introduces an efficient few-shot adaptation strategy that fine-tunes actions with minimal data, improving performance on novel object categories. Our experimental results demonstrate the high efficiency of Bi-Adapt, achieving high success rates in complex bimanual manipulation tasks with restricted data.
+              <!-- Bimanual manipulation tasks, such as unfolding a box or opening scissors, are prevalent in daily life and demand approaches that account for collaboration between both hands. These tasks, however, present substantial difficulties due to the need for large amounts of training data. Additionally, when manipulating novel object categories, the variation in geometric characteristics and physical properties across categories complicates generalization. To address these challenges, we present Bi-Adapt, a novel framework designed for efficient learning of bimanual manipulation for novel categories. Bi-Adapt leverages semantic correspondence from diffusion models, known for their strong generalization abilities, to transfer affordance to new categories. Furthermore, it introduces an efficient few-shot adaptation strategy that fine-tunes actions with minimal data, improving performance on novel object categories. Our experimental results demonstrate the high efficiency of Bi-Adapt, achieving high success rates in complex bimanual manipulation tasks with restricted data. -->
+              Bimanual manipulation is imperative yet challenging for robots to execute complex tasks, requiring coordinated collaboration between two arms. However, existing methods for bimanual manipulation often rely on costly data collection and training, struggling to generalize to unseen objects in novel categories efficiently. In this paper, we present Bi-Adapt, a novel framework designed for efficient generalization for bimanual manipulation via semantic correspondence. Bi-Adapt achieves cross-category affordance mapping by leveraging the strong capability of vision foundation models. Fine-tuning with restricted data on novel categories, Bi-Adapt exhibits notable generalization to out-of-category objects in a zero-shot manner. Extensive experiments conducted in both simulation and real-world environments validate the effectiveness of our approach and demonstrate its high efficiency, achieving a high success rate on different benchmark tasks across novel categories with limited data.
             </p>
           </div>
         </div>
@@ -132,7 +156,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h2 class="cool-title title is-3">Pipeline</h2>
-        <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
         <p class="mt-3">
           <strong>(Left)</strong> We collect quantities of data in simulator, and train the Action Learning Network to build our supporting set. The corresponding affordance and point-level action of training categories serve as our prior knowledge. <strong>(Middle)</strong> When facing an unseen object from novel categories and a task, we retrieve the familiar ones from our training categories within the same task. We leverage the powerful semantic correspondence capability in the diffusion model to achieve cross-category affordance generalization. Particularly, we often get multiple contact-point pair candidates. <strong>(Lower Right)</strong> Then, we sample the affordance candidates and action directions proposed by pre-trained Action Learning Network to execute. After few-shot learning, our network is fine-tuned by the interaction results to adapt the novel categories. <strong>(Upper Right)</strong>Finally, our fine-tuned framework can facilitate manipulating unseen instances from novel categories with better performance.
           <!-- <strong></strong>  -->
@@ -147,17 +171,30 @@
       <h2 class="cool-title title is-3">More Visuals</h2>
 
       <!-- Image 1 -->
-      <figure class="image">
-        <!-- <h2 class="cool-title title is-3">Cross-category affordance generalization results</h2> -->
+
+      <!-- <figure class="image">
         <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Cross-category affordance generalization results</h2>
-        <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
-          Cross-category affordance generalization results
-        </h2> -->
-        <img src="static/images/diffusion.png" alt="Example Image 1" />
+        <img src="static/images/diffusion.pdf" alt="Example Image 1" />
         <p class="mt-3">
           In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
         </p>
-      </figure>
+      </figure> -->
+      <figure class="image has-text-centered">
+        <h2 class="title is-3 has-text-warning has-text-weight-semibold" style="text-align: center;">
+          Cross-category affordance generalization results
+        </h2>
+
+        <img src="static/images/diffusion.png" alt="Example Image 1"
+            style="width: 60%; max-width: 600px; height: auto; margin: 0 auto; display: block;" />
+
+        <p class="mt-5" style="font-size: 0.95rem;">
+          In each group of figures from left to right, we present a source image as reference 
+          (<span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and 
+          <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’s contact point), 
+          and a target image with corresponding contact point inferred by diffusion model. 
+          The degree of highlighting in the target image represents the degree of correspondence.
+        </p>
+        </figure>
 
       <!-- Image 2 -->
       <figure class="image mt-5">
@@ -177,12 +214,21 @@
         <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
           Visualization of manipulation results
         </h2> -->
-        <img src="static/images/manip_results.png" alt="Example Image 3" />
+        <img src="static/images/results.png" alt="Example Image 3" />
         <p class="mt-3">
           In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
         </p>
       </figure>
-
+      <!-- Image 4 -->
+      <figure class="image mt-5">
+        
+        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Visualization of affordance comparison</h2>
+        <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
+          Visualization of manipulation results
+        </h2> -->
+        <img src="static/images/affordance_map.png" alt="Example Image 3" />
+       
+      </figure>
     </div>
   </div>
 </section>
@@ -200,7 +246,7 @@
             (a) Robot Setup
           </h2>
           <figure class="image is-4by3">
-            <img src="static/images/real_setup.jpg" alt="real exp setup">
+            <img src="static/images/robot_setup.jpg" alt="real exp setup">
           </figure>
         </div>
 
@@ -275,6 +321,15 @@
   </section>
   <!-- End video carousel -->
 
+        <!-- Image 2 -->
+      <figure class="image mt-5">
+        <!-- <h2 class="cool-title title is-3">Adaptation Results</h2> -->
+        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Generalization</h2>
+        
+        <img src="static/images/generalization.png" alt="Example Image 2" 
+        style="width: 100%; max-width:1000px; height: auto; margin: 0 auto; display: block;" />
+        
+      </figure>
 
   <!-- Paper poster -->
   <!-- <section class="hero is-small is-light">

@@ -52,9 +52,43 @@
             <h1 class="is-2 publication-title" style="font-size: 2.5rem;">
               <b>Bi-Adapt</b>: Few-shot <b>Bi</b>manual <b>Adapt</b>ation for Novel Categories of 3D Objects via Semantic Correspondence
             </h1>
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               Anonymous Authors
+            </span>
+          </div> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://isabella4444x.github.io">Jinxian Zhou</a><sup>1,2*</sup>,
+              <a href="https://warshallrho.github.io/">Ruihai Wu</a><sup>3*</sup>,
+              <a href="https://lew1sin.github.io/">Yiwei Liu</a><sup>1</sup>,
+              <a href="https://houyiwen.github.io/">Yiwen Hou</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhouxunzhe.github.io/">Xunzhe Zhou</a><sup>1,4</sup>,
+              <a href="https://tradewindycc.github.io/">Checheng Yu</a><sup>1,4</sup>,
+              <a href="https://zlicheng.com">Licheng Zhong</a><sup>2</sup>,
+              <a href="https://linsats.github.io/">Lin Shao</a><sup>1†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>National University of Singapore &nbsp;&nbsp;
+              <sup>2</sup>Shanghai Qi Zhi Institute
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>3</sup>Peking University &nbsp;&nbsp;
+              <sup>4</sup>The University of Hong Kong
+            </span>
+            <span class="eql-cntrb">
+              <small><br><sup>*</sup>Equal Contribution &nbsp;&nbsp; <sup>†</sup>Corresponding Author</small>
             </span>
           </div>
 <!-- 
@@ -67,16 +101,17 @@
             <div class="publication-links">
               <!-- Arxiv PDF link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                <a href="http://arxiv.org/abs/2602.08425" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Arxiv</span>
                 </a>
               </span>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -158,7 +193,12 @@
         <h2 class="cool-title title is-3">Pipeline</h2>
         <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
         <p class="mt-3">
-          <strong>(Left)</strong> We collect quantities of data in simulator, and train the Action Learning Network to build our supporting set. The corresponding affordance and point-level action of training categories serve as our prior knowledge. <strong>(Middle)</strong> When facing an unseen object from novel categories and a task, we retrieve the familiar ones from our training categories within the same task. We leverage the powerful semantic correspondence capability in the diffusion model to achieve cross-category affordance generalization. Particularly, we often get multiple contact-point pair candidates. <strong>(Lower Right)</strong> Then, we sample the affordance candidates and action directions proposed by pre-trained Action Learning Network to execute. After few-shot learning, our network is fine-tuned by the interaction results to adapt the novel categories. <strong>(Upper Right)</strong>Finally, our fine-tuned framework can facilitate manipulating unseen instances from novel categories with better performance.
+          <!-- <strong>(Left)</strong> We collect quantities of data in simulator, and train the Action Learning Network to build our supporting set. The corresponding affordance and point-level action of training categories serve as our prior knowledge. <strong>(Middle)</strong> When facing an unseen object from novel categories and a task, we retrieve the familiar ones from our training categories within the same task. We leverage the powerful semantic correspondence capability in the diffusion model to achieve cross-category affordance generalization. Particularly, we often get multiple contact-point pair candidates. <strong>(Lower Right)</strong> Then, we sample the affordance candidates and action directions proposed by pre-trained Action Learning Network to execute. After few-shot learning, our network is fine-tuned by the interaction results to adapt the novel categories. <strong>(Upper Right)</strong>Finally, our fine-tuned framework can facilitate manipulating unseen instances from novel categories with better performance. -->
+          <strong>(Left)</strong> We first train the Action Learning Network on the supporting set. The corresponding affordance and
+        action distribution serve as our prior knowledge. <strong>(Middle)</strong> Then, we make contact points mapping from training categories
+        to novel categories, leveraging the foundation model. <strong>(Lower Right)</strong> After that, the pre-trained network proposes actions
+        based on mapped contact-point pairs on novel categories and fine-tuned with the interaction results. <strong>(Upper Right)</strong> Finally,
+        the fine-tuned networks can facilitate manipulating unseen instances from novel categories with better performance.
           <!-- <strong></strong>  -->
         </p>
       </div>
@@ -172,13 +212,7 @@
 
       <!-- Image 1 -->
 
-      <!-- <figure class="image">
-        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Cross-category affordance generalization results</h2>
-        <img src="static/images/diffusion.pdf" alt="Example Image 1" />
-        <p class="mt-3">
-          In each group of figures from left to right, we present a source image as reference ( <span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’ contact point), and a target image with corresponding contact point inferred by diffusion model. The degree of highlighting in the target image represents the degree of correspondence.
-        </p>
-      </figure> -->
+      
       <figure class="image has-text-centered">
         <h2 class="title is-3 has-text-warning has-text-weight-semibold" style="text-align: center;">
           Cross-category affordance generalization results
@@ -188,11 +222,7 @@
             style="width: 60%; max-width: 600px; height: auto; margin: 0 auto; display: block;" />
 
         <p class="mt-5" style="font-size: 0.95rem;">
-          In each group of figures from left to right, we present a source image as reference 
-          (<span style="color:hotpink;">&#9733;</span> represents the first gripper’s contact point and 
-          <span style="color:deepskyblue;">&#9733;</span> represents the second gripper’s contact point), 
-          and a target image with corresponding contact point inferred by diffusion model. 
-          The degree of highlighting in the target image represents the degree of correspondence.
+          Each group shows a source image with contact points (<span style="color:hotpink;">&#9733;</span>: first gripper, <span style="color:deepskyblue;">&#9733;</span>: second gripper) and a target image with inferred points. Highlight intensity indicates correspondence.
         </p>
         </figure>
 
@@ -210,14 +240,12 @@
       <!-- Image 3 -->
       <figure class="image mt-5">
         <!-- <h2 class="cool-title title is-3">Visualization of manipulation results</h2> -->
-        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Visualization of manipulation results</h2>
+        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Visualization of manipulation results across tasks</h2>
         <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
           Visualization of manipulation results
         </h2> -->
         <img src="static/images/results.png" alt="Example Image 3" />
-        <p class="mt-3">
-          In each row, from left to right, we respectively show the process of task by ar- rows above. The blue block represents action learning on training categories, building supporting set. The green block shows the process of contact points mapping to novel categories. After few- shot learning on novel categories (yellow block), our finetuned model could select best contact point pairs and propose suitable actions for novel categories in pink block.
-        </p>
+        
       </figure>
       <!-- Image 4 -->
       <figure class="image mt-5">
@@ -278,11 +306,10 @@
       <h2 class="cool-title title is-3">Visualization of real-world experiments</h2>
       <img src="static/images/real_process.png" alt="MY ALT TEXT"/>
       <p class="mt-3">
-        Each row represents a different task: 
-        <strong>(top)</strong> unfolding, <strong>(middle)</strong> opening, and <strong>(bottom)</strong>  uncapping.<br>
-        For each row, from left to right: (a) the target object from unseen categories; (b) contact points of training categories; (c) contact points mapped on novel categories; 
-        (d) the initial pose of the grippers; (e) the final result after manipulation.
-        <!-- <strong></strong>  -->
+        Each row represents a task. From left to right, we
+        respectively show the corresponding affordance on novel categories
+        (<span style="color:hotpink;">&#9733;</span>: first gripper, <span style="color:deepskyblue;">&#9733;</span>: second gripper) and the manipulation progress.
+        
       </p>
     </div>
   </div>

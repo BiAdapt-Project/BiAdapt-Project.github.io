@@ -1,0 +1,673 @@
+[
+  {
+    "slide": 1,
+    "title": "Jinxian Zhou*, Ruihai Wu*, Yiwei Liu, Yiwen Hou, Xunzhe Zhou,",
+    "text": [
+      "Jinxian",
+      "Zhou*,",
+      "Ruihai",
+      "Wu*, Yiwei Liu, Yiwen Hou,",
+      "Xunzhe",
+      "Zhou,",
+      "Checheng",
+      "Yu, Licheng Zhong, Lin Shao †",
+      ":",
+      "Few-shot",
+      "Bimanual Adaptation",
+      "for Novel Categories of 3D Objects via",
+      "Semantic Correspondence",
+      "1"
+    ],
+    "media": [
+      "image6.png",
+      "image1.png",
+      "image5.png",
+      "image4.png",
+      "image3.png",
+      "image8.png",
+      "image2.jpeg",
+      "image7.png"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "Many complex tasks require two hands’ collaboration. Bimanual Manipulation is Essential 2",
+    "text": [
+      "Many complex tasks require two hands’ collaboration.",
+      "Bimanual Manipulation is Essential",
+      "2"
+    ],
+    "media": [
+      "image9.png",
+      "image13.png",
+      "image12.png",
+      "image11.png",
+      "image10.png"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "Key Challenges of Bimanual Manipulation Generalization Coordination Generalize to Unseen Objects, Tasks,",
+    "text": [
+      "Key Challenges",
+      "of",
+      "Bimanual Manipulation",
+      "Generalization",
+      "Coordination",
+      "Generalize to Unseen Objects, Tasks,",
+      "and Embodiments",
+      "✓",
+      "✗",
+      "Synchronize Dual-Arm Actions for Stable and Effective Interaction",
+      "3"
+    ],
+    "media": [
+      "media4.mp4",
+      "image17.png",
+      "media2.mp4",
+      "media6.mp4",
+      "image16.png",
+      "media1.mp4",
+      "image15.png",
+      "image19.png",
+      "media3.mp4",
+      "image14.png",
+      "media5.mp4",
+      "image18.png"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "Affordances Enable Scalable and Generalizable Bimanual Skills Robot-Centric < Joint Values/Actions> ✗ Costly Data Collection ✗ Embodiment-Dependent",
+    "text": [
+      "Affordances Enable Scalable and Generalizable",
+      "Bimanual Skills",
+      "Robot-Centric",
+      "< Joint Values/Actions>",
+      "✗ Costly Data Collection",
+      "✗ Embodiment-Dependent",
+      "Object-Centric",
+      "< Affordance Heatmap>",
+      "✓ Efficient Data Collection",
+      "✓ Cross-Embodiment",
+      "RL-based exploration",
+      "Teleoperation",
+      "✗ Limited Scalability",
+      "✓ Scalable Interaction Knowledge",
+      "Affordance Learning",
+      "4"
+    ],
+    "media": [
+      "image22.png",
+      "media7.mp4",
+      "image21.png",
+      "image20.png"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "✓ generalization ✗ coordinated bimanual manipulation ✓ generalization ✓ generalization ✓ coordinated bimanual manipulation ✗",
+    "text": [
+      "✓ generalization",
+      "✗ coordinated bimanual manipulation",
+      "✓ generalization",
+      "✓ generalization",
+      "✓ coordinated bimanual manipulation",
+      "✗",
+      "Meta, 2023",
+      "foundation-model-based",
+      "< affordance mapping >",
+      "affordance mapping",
+      "< no adaptation>",
+      "< affordance",
+      "mapping",
+      "+ adaptation>",
+      "✓",
+      "From Correspondence to Coordinated Bimanual Skills",
+      "Semantic Correspondence",
+      "5"
+    ],
+    "media": [
+      "image26.png",
+      "image31.png",
+      "image25.png",
+      "image30.png",
+      "media8.mp4",
+      "image34.png",
+      "image24.png",
+      "image29.png",
+      "image23.png",
+      "image33.png",
+      "image28.png",
+      "image27.png",
+      "image32.png"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "6",
+    "text": [
+      "6"
+    ],
+    "media": [
+      "image35.png",
+      "image36.png"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "Training Set Bimanual Tasks … 7",
+    "text": [
+      "Training Set",
+      "Bimanual Tasks",
+      "…",
+      "7"
+    ],
+    "media": [
+      "image37.png",
+      "image35.png",
+      "image39.png",
+      "image38.png"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "Training Set Bimanual Tasks Action Module Pre-train Action Pre-Training 8",
+    "text": [
+      "Training Set",
+      "Bimanual Tasks",
+      "Action Module",
+      "Pre-train",
+      "Action Pre-Training",
+      "8"
+    ],
+    "media": [
+      "image40.jpeg",
+      "image43.png",
+      "image42.jpeg",
+      "image41.jpeg"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "P1 P2 T2 T1 Action Module PointNet",
+    "text": [
+      "P1",
+      "P2",
+      "T2",
+      "T1",
+      "Action Module",
+      "PointNet",
+      "++",
+      "affordance prediction",
+      "trajectory proposal",
+      "9"
+    ],
+    "media": [
+      "image44.png",
+      "image48.png",
+      "image47.png",
+      "image46.png",
+      "image45.png"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "Affordance Mapping foundation model corresponding affordance Affordance Mapping via Semantic Correspondence 10",
+    "text": [
+      "Affordance Mapping",
+      "foundation model",
+      "corresponding affordance",
+      "Affordance Mapping via",
+      "Semantic Correspondence",
+      "10",
+      "Novel Category"
+    ],
+    "media": [
+      "image49.jpeg",
+      "image53.png",
+      "image52.png",
+      "image51.png",
+      "image50.png"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "corresponding affordance Few-shot Adaptation Action Module ✗ ✓ Affordance Adaptation",
+    "text": [
+      "corresponding affordance",
+      "Few-shot Adaptation",
+      "Action Module",
+      "✗",
+      "✓",
+      "Affordance Adaptation",
+      "11"
+    ],
+    "media": [
+      "image57.png",
+      "image51.png",
+      "image56.png",
+      "image55.png",
+      "image54.jpeg",
+      "image52.png"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "corresponding affordance Few-shot Adaptation Action Module ✗ ✓ adapted",
+    "text": [
+      "corresponding affordance",
+      "Few-shot Adaptation",
+      "Action Module",
+      "✗",
+      "✓",
+      "adapted",
+      "affordance",
+      "Affordance Adaptation",
+      "12"
+    ],
+    "media": [
+      "image58.png",
+      "image51.png",
+      "image57.png",
+      "image55.png",
+      "image60.png",
+      "image54.jpeg",
+      "image59.png",
+      "image52.png",
+      "image56.png"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "corresponding affordance Few-shot Adaptation Action Module ✓ ✗ trajectory",
+    "text": [
+      "corresponding affordance",
+      "Few-shot Adaptation",
+      "Action Module",
+      "✓",
+      "✗",
+      "trajectory",
+      "adaptation",
+      "Trajectory Adaptation",
+      "13"
+    ],
+    "media": [
+      "image62.png",
+      "image52.png",
+      "image56.png",
+      "image61.jpeg",
+      "image55.png",
+      "image54.jpeg",
+      "image63.png"
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "Few-shot Adaptation Action Module ✓ ✗ affordance adaptation trajectory",
+    "text": [
+      "Few-shot Adaptation",
+      "Action Module",
+      "✓",
+      "✗",
+      "affordance adaptation",
+      "trajectory",
+      "adaptation",
+      "✗",
+      "✓",
+      "Few-Shot Adaptation",
+      "14"
+    ],
+    "media": [
+      "image56.png",
+      "image54.jpeg",
+      "image55.png"
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "Action Module Adapted Evaluation Generalization on Novel Categories 15",
+    "text": [
+      "Action Module",
+      "Adapted",
+      "Evaluation",
+      "Generalization on Novel Categories",
+      "15"
+    ],
+    "media": [
+      "image64.png",
+      "image65.png"
+    ]
+  },
+  {
+    "slide": 16,
+    "title": "Training Set Affordance Mapping foundation model corresponding affordance Few-shot Adaptation Action Module",
+    "text": [
+      "Training Set",
+      "Affordance Mapping",
+      "foundation model",
+      "corresponding affordance",
+      "Few-shot Adaptation",
+      "Action Module",
+      "✓",
+      "✗",
+      "affordance adaptation",
+      "Pre-train",
+      "Adapted",
+      "Evaluation",
+      "trajectory",
+      "adaptation",
+      "✗",
+      "✓",
+      "16",
+      "Novel Category"
+    ],
+    "media": [
+      "image49.jpeg",
+      "image54.jpeg",
+      "image40.jpeg",
+      "image52.png",
+      "image55.png",
+      "image53.png",
+      "image67.png",
+      "image35.png",
+      "image56.png",
+      "image42.jpeg",
+      "image66.png",
+      "image51.png",
+      "image41.jpeg",
+      "image50.png",
+      "image64.png"
+    ]
+  },
+  {
+    "slide": 17,
+    "title": "Simulation Experiments 17",
+    "text": [
+      "Simulation Experiments",
+      "17"
+    ],
+    "media": [
+      "media9.mp4",
+      "image68.png"
+    ]
+  },
+  {
+    "slide": 18,
+    "title": "Quantitative Results High Success Rate 18",
+    "text": [
+      "Quantitative Results",
+      "High Success Rate",
+      "18"
+    ],
+    "media": [
+      "image69.png"
+    ]
+  },
+  {
+    "slide": 19,
+    "title": "Key Findings Semantic Correspondence (SC): Significantly improves generalization",
+    "text": [
+      "Key Findings",
+      "Semantic Correspondence (SC):",
+      "Significantly",
+      "improves generalization"
+    ],
+    "media": []
+  },
+  {
+    "slide": 20,
+    "title": "Semantic Correspondence (SC): Significantly improves generalization Few-shot Adaptation (FA): Further boosts",
+    "text": [
+      "Semantic Correspondence (SC):",
+      "Significantly",
+      "improves generalization",
+      "Few-shot Adaptation (FA):",
+      "Further",
+      "boosts",
+      "performance by",
+      "enhancing coordination",
+      "Key Findings",
+      "20"
+    ],
+    "media": []
+  },
+  {
+    "slide": 21,
+    "title": "Efficiency of Adaptation Reference Affordance Mapping 21",
+    "text": [
+      "Efficiency of Adaptation",
+      "Reference",
+      "Affordance Mapping",
+      "21"
+    ],
+    "media": [
+      "image75.png",
+      "image70.png",
+      "image74.png",
+      "image73.png",
+      "image72.png",
+      "image77.png",
+      "image71.png",
+      "image76.png"
+    ]
+  },
+  {
+    "slide": 22,
+    "title": "Efficiency of Adaptation Epoch 0 Epoch 1 Epoch 2 22",
+    "text": [
+      "Efficiency of Adaptation",
+      "Epoch 0",
+      "Epoch 1",
+      "Epoch 2",
+      "22"
+    ],
+    "media": [
+      "image81.png",
+      "media11.mp4",
+      "image80.png",
+      "media10.mp4",
+      "media12.mp4",
+      "image79.png",
+      "image83.png",
+      "image78.png",
+      "image72.png",
+      "image82.png"
+    ]
+  },
+  {
+    "slide": 23,
+    "title": "Efficiency of Adaptation Epoch 0 Epoch 1 Epoch 2 Epoch 0 Epoch 1",
+    "text": [
+      "Efficiency of Adaptation",
+      "Epoch 0",
+      "Epoch 1",
+      "Epoch 2",
+      "Epoch 0",
+      "Epoch 1",
+      "Epoch 2",
+      "23"
+    ],
+    "media": [
+      "image87.gif",
+      "image92.png",
+      "image70.png",
+      "image86.gif",
+      "image91.png",
+      "image95.png",
+      "image85.gif",
+      "image90.png",
+      "image84.gif",
+      "image94.png",
+      "image89.gif",
+      "image73.png",
+      "image88.gif",
+      "image93.png"
+    ]
+  },
+  {
+    "slide": 24,
+    "title": "Efficiency of Adaptation Epoch 0 Epoch 1 Epoch 2 24",
+    "text": [
+      "Efficiency of Adaptation",
+      "Epoch 0",
+      "Epoch 1",
+      "Epoch 2",
+      "24"
+    ],
+    "media": [
+      "media16.mp4",
+      "media19.mp4",
+      "media21.mp4",
+      "image99.png",
+      "media14.mp4",
+      "image70.png",
+      "media18.mp4",
+      "image98.png",
+      "media13.mp4",
+      "media20.mp4",
+      "image72.png",
+      "image102.png",
+      "media15.mp4",
+      "image97.png",
+      "image96.png",
+      "image101.png",
+      "media17.mp4",
+      "image104.png",
+      "image73.png",
+      "image100.png",
+      "image103.png"
+    ]
+  },
+  {
+    "slide": 25,
+    "title": "Generalization of Adaptation Zero-shot Generalize to the Unseen Instances! 25",
+    "text": [
+      "Generalization of Adaptation",
+      "Zero-shot Generalize to the Unseen Instances!",
+      "25"
+    ],
+    "media": [
+      "image105.gif",
+      "image107.gif",
+      "image106.gif"
+    ]
+  },
+  {
+    "slide": 26,
+    "title": "LeapHand X Hand Gripper Real-World Experiments 26",
+    "text": [
+      "LeapHand",
+      "X",
+      "Hand",
+      "Gripper",
+      "Real-World Experiments",
+      "26"
+    ],
+    "media": [
+      "image113.png",
+      "image108.png",
+      "image112.png",
+      "image111.png",
+      "image110.png",
+      "image109.png"
+    ]
+  },
+  {
+    "slide": 27,
+    "title": "LeapHand X Hand Gripper Rotate-Uncapping Pull-Uncapping",
+    "text": [
+      "LeapHand",
+      "X",
+      "Hand",
+      "Gripper",
+      "Rotate-Uncapping",
+      "Pull-Uncapping",
+      "Cross-Embodiment",
+      "27",
+      "Bi-Adapt",
+      "Can Apply to Diverse Hands !"
+    ],
+    "media": [
+      "media25.mp4",
+      "image114.png",
+      "media23.mp4",
+      "image117.png",
+      "media27.mp4",
+      "image113.png",
+      "media22.mp4",
+      "image112.png",
+      "image116.png",
+      "media24.mp4",
+      "image111.png",
+      "image119.png",
+      "media26.mp4",
+      "image115.png",
+      "image118.png"
+    ]
+  },
+  {
+    "slide": 28,
+    "title": "Gripper LeapHand XHand 28",
+    "text": [
+      "Gripper",
+      "LeapHand",
+      "XHand",
+      "28"
+    ],
+    "media": [
+      "media28.mp4",
+      "image120.png"
+    ]
+  },
+  {
+    "slide": 29,
+    "title": "Bi-Adapt: Scaling Up Bimanual Manipulation Teleoperation Knowledge Transfer + Adaptation Knowledge Transfer + Adaptation → Generalize Across Objects, Tasks, and Embodiments at Scale",
+    "text": [
+      "Bi-Adapt: Scaling Up Bimanual Manipulation",
+      "Teleoperation",
+      "Knowledge Transfer + Adaptation",
+      "Knowledge Transfer + Adaptation → Generalize Across Objects, Tasks, and Embodiments at Scale"
+    ],
+    "media": [
+      "image121.png",
+      "image123.png",
+      "image122.png",
+      "image22.png"
+    ]
+  },
+  {
+    "slide": 30,
+    "title": "Jinxian Zhou*, Ruihai Wu*, Yiwei Liu, Yiwen Hou, Xunzhe Zhou,",
+    "text": [
+      "Jinxian",
+      "Zhou*,",
+      "Ruihai",
+      "Wu*, Yiwei Liu, Yiwen Hou,",
+      "Xunzhe",
+      "Zhou,",
+      "Checheng",
+      "Yu, Licheng Zhong, Lin Shao †",
+      "Thank you for your attention!",
+      ":",
+      "Few-shot",
+      "Bimanual Adaptation",
+      "for Novel Categories of 3D Objects via",
+      "Semantic Correspondence",
+      "Scan",
+      "here",
+      "to visit our website for more information!",
+      "https://biadapt-project.github.io/",
+      "30"
+    ],
+    "media": [
+      "image124.png",
+      "image1.png",
+      "image5.png",
+      "image4.png",
+      "image3.png",
+      "image2.jpeg",
+      "image125.png"
+    ]
+  }
+]

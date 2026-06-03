@@ -270,6 +270,7 @@
   </div>
 </section>
 
+<template data-disabled-section="real-experiment-setup">
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -307,7 +308,9 @@
     </div>
   </div>
 </section>
+</template>
 
+<template data-disabled-section="visualization-of-real-world-experiments">
 <!-- Image carousel -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -323,7 +326,9 @@
     </div>
   </div>
 </section>
+</template>
 
+<template data-disabled-section="real-world-demo">
   <!-- Video carousel -->
   <section class="hero is-small">
     <div class="hero-body">
@@ -356,7 +361,164 @@
     </div>
   </section>
   <!-- End video carousel -->
+</template>
 
+  <section class="section latest-experiments" id="latest-experiments">
+    <div class="container is-max-desktop">
+      <h2 class="cool-title title is-3 experiment-section-title">Simulation Experiment</h2>
+
+      <div class="experiment-block">
+        <figure class="experiment-feature">
+          <video controls muted playsinline loop preload="metadata">
+            <source src="static/slides-materials/videos/media9.mp4" type="video/mp4">
+          </video>
+          <figcaption>Simulation rollout examples across bimanual manipulation tasks.</figcaption>
+        </figure>
+        <figure class="experiment-feature simulation-chart">
+          <img src="static/slides-materials/images/image69.png" alt="Simulation quantitative results">
+          <figcaption>Quantitative success rates on unseen instances in novel categories.</figcaption>
+        </figure>
+      </div>
+
+      <h2 class="cool-title title is-3 experiment-section-title real-world-title">Real World Experiment</h2>
+
+      <div class="experiment-block">
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Efficiency of Adaptation</h3>
+        <div class="adaptation-efficiency">
+          <div class="adaptation-object-row">
+            <figure class="adaptation-object">
+              <img src="static/slides-materials/images/image72.png" alt="Basket object">
+            </figure>
+            <div class="adaptation-epochs">
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <video controls muted playsinline loop preload="metadata">
+                    <source src="static/slides-materials/videos/media10.mp4" type="video/mp4">
+                  </video>
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image79.png" alt="Basket heatmap at epoch 0">
+                </div>
+                <figcaption>Epoch 0</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <video controls muted playsinline loop preload="metadata">
+                    <source src="static/slides-materials/videos/media11.mp4" type="video/mp4">
+                  </video>
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image81.png" alt="Basket heatmap at epoch 1">
+                </div>
+                <figcaption>Epoch 1</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <video controls muted playsinline loop preload="metadata">
+                    <source src="static/slides-materials/videos/media12.mp4" type="video/mp4">
+                  </video>
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image83.png" alt="Basket heatmap at epoch 2">
+                </div>
+                <figcaption>Epoch 2</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="adaptation-object-row">
+            <figure class="adaptation-object">
+              <img src="static/slides-materials/images/image70.png" alt="White bowl object">
+            </figure>
+            <div class="adaptation-epochs">
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image84.gif" alt="White bowl adaptation epoch 0">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image95.png" alt="White bowl heatmap at epoch 0">
+                </div>
+                <figcaption>Epoch 0</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image85.gif" alt="White bowl adaptation epoch 1">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image90.png" alt="White bowl heatmap at epoch 1">
+                </div>
+                <figcaption>Epoch 1</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image86.gif" alt="White bowl adaptation epoch 2">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image91.png" alt="White bowl heatmap at epoch 2">
+                </div>
+                <figcaption>Epoch 2</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="adaptation-object-row">
+            <figure class="adaptation-object">
+              <img src="static/slides-materials/images/image73.png" alt="Metal bowl object">
+            </figure>
+            <div class="adaptation-epochs">
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image87.gif" alt="Metal bowl adaptation epoch 0">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image92.png" alt="Metal bowl heatmap at epoch 0">
+                </div>
+                <figcaption>Epoch 0</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image88.gif" alt="Metal bowl adaptation epoch 1">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image93.png" alt="Metal bowl heatmap at epoch 1">
+                </div>
+                <figcaption>Epoch 1</figcaption>
+              </figure>
+              <figure class="adaptation-epoch">
+                <div class="adaptation-media">
+                  <img class="adaptation-demo" src="static/slides-materials/images/image89.gif" alt="Metal bowl adaptation epoch 2">
+                  <img class="adaptation-heatmap" src="static/slides-materials/images/image94.png" alt="Metal bowl heatmap at epoch 2">
+                </div>
+                <figcaption>Epoch 2</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment-block">
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Generalization of Adaptation</h3>
+        <div class="experiment-grid three-up">
+          <figure class="experiment-card">
+            <img src="static/slides-materials/images/image105.gif" alt="Generalization demo 1">
+            <figcaption>Unseen instance demo 1</figcaption>
+          </figure>
+          <figure class="experiment-card">
+            <img src="static/slides-materials/images/image106.gif" alt="Generalization demo 2">
+            <figcaption>Unseen instance demo 2</figcaption>
+          </figure>
+          <figure class="experiment-card">
+            <img src="static/slides-materials/images/image107.gif" alt="Generalization demo 3">
+            <figcaption>Unseen instance demo 3</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="experiment-block">
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Cross-Embodiment</h3>
+        <figure class="experiment-feature cross-embodiment-feature">
+          <div class="cross-embodiment-video-frame">
+            <video controls muted playsinline loop preload="metadata">
+              <source src="static/slides-materials/videos/media28.mp4" type="video/mp4">
+            </video>
+            <div class="cross-region gripper-region"></div>
+            <div class="cross-region leaphand-region"></div>
+            <div class="cross-region xhand-region"></div>
+            <div class="cross-label gripper-label">Gripper</div>
+            <div class="cross-label leaphand-label">LeapHand</div>
+            <div class="cross-label xhand-label">XHand</div>
+          </div>
+          <figcaption>Cross-embodiment demonstration across gripper, LeapHand, and XHand.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <template data-disabled-section="generalization">
         <!-- Image 2 -->
       <figure class="image mt-5">
         <!-- <h2 class="cool-title title is-3">Adaptation Results</h2> -->
@@ -366,6 +528,7 @@
         style="width: 100%; max-width:1000px; height: auto; margin: 0 auto; display: block;" />
         
       </figure>
+  </template>
 
   <!-- Paper poster -->
   <!-- <section class="hero is-small is-light">

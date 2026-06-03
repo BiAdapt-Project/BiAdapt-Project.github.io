@@ -1,0 +1,202 @@
+[
+  {
+    "output": "1-1.mp4",
+    "column_x": 1,
+    "row_y": 1,
+    "source_shape_name": "图片 7",
+    "source_media": "ppt/media/image7.gif",
+    "action": "converted gif to mp4",
+    "x_emu": 0,
+    "y_emu": 0
+  },
+  {
+    "output": "1-2.mp4",
+    "column_x": 1,
+    "row_y": 2,
+    "source_shape_name": "图片 8",
+    "source_media": "ppt/media/image8.gif",
+    "action": "converted gif to mp4",
+    "x_emu": 0,
+    "y_emu": 1714500
+  },
+  {
+    "output": "1-3.mp4",
+    "column_x": 1,
+    "row_y": 3,
+    "source_shape_name": "zoomin_leap1_g0j2K6.mp4",
+    "source_media": "ppt/media/media5.mp4",
+    "action": "extracted mp4",
+    "x_emu": 0,
+    "y_emu": 3429000
+  },
+  {
+    "output": "1-4.mp4",
+    "column_x": 1,
+    "row_y": 4,
+    "source_shape_name": "zoomin_leap2_mzdKTC.mp4",
+    "source_media": "ppt/media/media6.mp4",
+    "action": "extracted mp4",
+    "x_emu": 0,
+    "y_emu": 5143500
+  },
+  {
+    "output": "2-1.mp4",
+    "column_x": 2,
+    "row_y": 1,
+    "source_shape_name": "gripper2_zSAISM.mp4",
+    "source_media": "ppt/media/media3.mp4",
+    "action": "extracted mp4",
+    "x_emu": 2438400,
+    "y_emu": 0
+  },
+  {
+    "output": "2-2.mp4",
+    "column_x": 2,
+    "row_y": 2,
+    "source_shape_name": "gripper1_9pYkTN.mp4",
+    "source_media": "ppt/media/media4.mp4",
+    "action": "extracted mp4",
+    "x_emu": 2438400,
+    "y_emu": 1714500
+  },
+  {
+    "output": "2-3.mp4",
+    "column_x": 2,
+    "row_y": 3,
+    "source_shape_name": "leap4_mSaJ1r.mp4",
+    "source_media": "ppt/media/media2.mp4",
+    "action": "extracted mp4",
+    "x_emu": 2438400,
+    "y_emu": 3429000
+  },
+  {
+    "output": "2-4.mp4",
+    "column_x": 2,
+    "row_y": 4,
+    "source_shape_name": "leap3_VGMnKp.mp4",
+    "source_media": "ppt/media/media1.mp4",
+    "action": "extracted mp4",
+    "x_emu": 2438400,
+    "y_emu": 5143500
+  },
+  {
+    "output": "3-1.mp4",
+    "column_x": 3,
+    "row_y": 1,
+    "source_shape_name": "red_toothpasta_HtLm1o.mp4",
+    "source_media": "ppt/media/media15.mp4",
+    "action": "extracted mp4",
+    "x_emu": 4876800,
+    "y_emu": 0
+  },
+  {
+    "output": "3-2.mp4",
+    "column_x": 3,
+    "row_y": 2,
+    "source_shape_name": "laundry_detergent_X4_19I597.mp4",
+    "source_media": "ppt/media/media10.mp4",
+    "action": "extracted mp4",
+    "x_emu": 4876800,
+    "y_emu": 1714500
+  },
+  {
+    "output": "3-3.mp4",
+    "column_x": 3,
+    "row_y": 3,
+    "source_shape_name": "uncapping_laptop_X4_7kPIBI.mp4",
+    "source_media": "ppt/media/media8.mp4",
+    "action": "extracted mp4",
+    "x_emu": 4876800,
+    "y_emu": 3429000
+  },
+  {
+    "output": "3-4.mp4",
+    "column_x": 3,
+    "row_y": 4,
+    "source_shape_name": "Uncapping_box_X4_BWIm64.mp4",
+    "source_media": "ppt/media/media9.mp4",
+    "action": "extracted mp4",
+    "x_emu": 4876800,
+    "y_emu": 5143500
+  },
+  {
+    "output": "4-1.mp4",
+    "column_x": 4,
+    "row_y": 1,
+    "source_shape_name": "white_toothpasta_6QJYcU.mp4",
+    "source_media": "ppt/media/media16.mp4",
+    "action": "extracted mp4",
+    "x_emu": 7315200,
+    "y_emu": 0
+  },
+  {
+    "output": "4-2.mp4",
+    "column_x": 4,
+    "row_y": 2,
+    "source_shape_name": "flowering_X4_i9BNen.mp4",
+    "source_media": "ppt/media/media14.mp4",
+    "action": "extracted mp4",
+    "x_emu": 7315200,
+    "y_emu": 1714500
+  },
+  {
+    "output": "4-3.mp4",
+    "column_x": 4,
+    "row_y": 3,
+    "source_shape_name": "cutting_flower_X4_UVxWcS.mp4",
+    "source_media": "ppt/media/media12.mp4",
+    "action": "extracted mp4",
+    "x_emu": 7315200,
+    "y_emu": 3429000
+  },
+  {
+    "output": "4-4.mp4",
+    "column_x": 4,
+    "row_y": 4,
+    "source_shape_name": "cutting_paper_X10_kkJpxd.mp4",
+    "source_media": "ppt/media/media11.mp4",
+    "action": "extracted mp4",
+    "x_emu": 7315200,
+    "y_emu": 5143500
+  },
+  {
+    "output": "5-1.mp4",
+    "column_x": 5,
+    "row_y": 1,
+    "source_shape_name": "scooping_coffee_X4_yXg6oy.mp4",
+    "source_media": "ppt/media/media13.mp4",
+    "action": "extracted mp4",
+    "x_emu": 9753600,
+    "y_emu": 0
+  },
+  {
+    "output": "5-2.mp4",
+    "column_x": 5,
+    "row_y": 2,
+    "source_shape_name": "scooping_medicine_jar_X4_uq7M8p.mp4",
+    "source_media": "ppt/media/media18.mp4",
+    "action": "extracted mp4",
+    "x_emu": 9753600,
+    "y_emu": 1714500
+  },
+  {
+    "output": "5-3.mp4",
+    "column_x": 5,
+    "row_y": 3,
+    "source_shape_name": "string_coffee_X2_70hVID.mp4",
+    "source_media": "ppt/media/media7.mp4",
+    "action": "extracted mp4",
+    "x_emu": 9753600,
+    "y_emu": 3429000
+  },
+  {
+    "output": "5-4.mp4",
+    "column_x": 5,
+    "row_y": 4,
+    "source_shape_name": "stiring_glass_rod_X4_v8Ptlw.mp4",
+    "source_media": "ppt/media/media17.mp4",
+    "action": "extracted mp4",
+    "x_emu": 9753600,
+    "y_emu": 5143500
+  }
+]

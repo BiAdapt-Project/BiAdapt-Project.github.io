@@ -134,7 +134,7 @@
           <div class="column is-four-fifths">
             
             <div class="publication-video">
-             <iframe src="https://www.youtube.com/embed/MtRbVvZyFyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <iframe src="https://www.youtube.com/embed/y9AEt3q7EWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               
           </div>
           </div>
@@ -154,9 +154,9 @@
           
           <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
-            <!-- <iframe src="https://www.youtube.com/embed/MtRbVvZyFyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
-           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MtRbVvZyFyA?si=B38Y5TXMLHDIW0oF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/MtRbVvZyFyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/y9AEt3q7EWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y9AEt3q7EWg?si=B38Y5TXMLHDIW0oF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/y9AEt3q7EWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -165,17 +165,6 @@
 </section>
 
 <!-- End youtube video -->
-
-  <!-- Teaser-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h2 class="cool-title title is-3">Teaser</h2>
-        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
-      </div>
-    </div>
-  </section>
-  <!-- End teaser -->
 
   <!-- Paper abstract -->
   <section class="section hero is-light">
@@ -199,8 +188,8 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <h2 class="cool-title title is-3">Pipeline</h2>
-        <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
+        <h2 class="cool-title title is-3">Pipeline Overview</h2>
+        <img class="paper-figure pipeline-figure" src="static/images/pipeline.png" alt="Bi-Adapt pipeline"/>
         <p class="mt-3">
           <!-- <strong>(Left)</strong> We collect quantities of data in simulator, and train the Action Learning Network to build our supporting set. The corresponding affordance and point-level action of training categories serve as our prior knowledge. <strong>(Middle)</strong> When facing an unseen object from novel categories and a task, we retrieve the familiar ones from our training categories within the same task. We leverage the powerful semantic correspondence capability in the diffusion model to achieve cross-category affordance generalization. Particularly, we often get multiple contact-point pair candidates. <strong>(Lower Right)</strong> Then, we sample the affordance candidates and action directions proposed by pre-trained Action Learning Network to execute. After few-shot learning, our network is fine-tuned by the interaction results to adapt the novel categories. <strong>(Upper Right)</strong>Finally, our fine-tuned framework can facilitate manipulating unseen instances from novel categories with better performance. -->
           <strong>(Left)</strong> We first train the Action Learning Network on the supporting set. The corresponding affordance and
@@ -239,33 +228,22 @@
       <figure class="image mt-5">
         <!-- <h2 class="cool-title title is-3">Adaptation Results</h2> -->
         <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Adaptation Results</h2>
-        
-        <img src="static/images/adaptation.png" alt="Example Image 2" />
+
+        <div class="adaptation-result-pair">
+          <figure class="adaptation-result-item">
+            <img src="static/images/affordance_adaptation.png" alt="Affordance adaptation result" />
+            <figcaption class="adaptation-result-title">Affordance Adaptation</figcaption>
+          </figure>
+          <figure class="adaptation-result-item">
+            <img src="static/images/trajectory_adaptation.png" alt="Trajectory adaptation result" />
+            <figcaption class="adaptation-result-title">Trajectory Adaptation</figcaption>
+          </figure>
+        </div>
         <!-- <p class="mt-3">
           <strong>Figure 2:</strong> This shows our initial setup. We use a dual-arm robot to interact with daily objects.
         </p> -->
       </figure>
 
-      <!-- Image 3 -->
-      <figure class="image mt-5">
-        <!-- <h2 class="cool-title title is-3">Visualization of manipulation results</h2> -->
-        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Visualization of manipulation results across tasks</h2>
-        <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
-          Visualization of manipulation results
-        </h2> -->
-        <img src="static/images/results.png" alt="Example Image 3" />
-        
-      </figure>
-      <!-- Image 4 -->
-      <figure class="image mt-5">
-        
-        <h2 class="title is-3 has-text-warning has-text-weight-semibold is-rounded" style="text-align: center;">Visualization of affordance comparison</h2>
-        <!-- <h2 class="title is-3 has-text-weight-semibold is-rounded" style="text-align: center; color: black; font-family: Helvetica, Arial, sans-serif;">
-          Visualization of manipulation results
-        </h2> -->
-        <img src="static/images/affordance_map.png" alt="Example Image 3" />
-       
-      </figure>
     </div>
   </div>
 </section>
@@ -374,13 +352,63 @@
           </video>
           <figcaption>Simulation rollout examples across bimanual manipulation tasks.</figcaption>
         </figure>
-        <figure class="experiment-feature simulation-chart">
-          <img src="static/slides-materials/images/image69.png" alt="Simulation quantitative results">
-          <figcaption>Quantitative success rates on unseen instances in novel categories.</figcaption>
+        <figure class="experiment-feature simulation-results-visualization">
+          <h3 class="title is-4 has-text-warning has-text-weight-semibold">Visualization of manipulation results across tasks</h3>
+          <img src="static/images/results.png" alt="Visualization of manipulation results across tasks">
         </figure>
       </div>
 
       <h2 class="cool-title title is-3 experiment-section-title real-world-title">Real World Experiment</h2>
+
+      <div class="experiment-block">
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Robot Setup</h3>
+        <figure class="experiment-feature">
+          <img class="paper-figure robot-setup-figure" src="static/images/robot_setup.png" alt="Real-world robot setup">
+          <figcaption>Real-world robot setup for bimanual manipulation experiments.</figcaption>
+        </figure>
+      </div>
+
+      <div class="experiment-block">
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Real-World Demos</h3>
+
+        <div class="demo-category">
+          <h4 class="title is-5 demo-category-title">Gripper</h4>
+          <div class="demo-strip" aria-label="Gripper real-world demos">
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/1-1.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/1-2.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/2-1.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/2-2.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+
+        <div class="demo-category">
+          <h4 class="title is-5 demo-category-title">LeapHand</h4>
+          <div class="demo-strip" aria-label="LeapHand real-world demos">
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/1-3.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/1-4.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/2-3.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/2-4.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+
+        <div class="demo-category">
+          <h4 class="title is-5 demo-category-title">XHand</h4>
+          <div class="demo-strip" aria-label="XHand real-world demos">
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/3-1.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/3-2.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/3-3.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/3-4.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/4-1.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/4-2.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/4-3.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/4-4.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/5-1.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/5-2.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/5-3.mp4" type="video/mp4"></video>
+            <video autoplay controls muted playsinline loop preload="metadata"><source src="static/videos/single_demos/5-4.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
 
       <div class="experiment-block">
         <h3 class="title is-4 has-text-warning has-text-weight-semibold">Efficiency of Adaptation</h3>
@@ -499,7 +527,7 @@
       </div>
 
       <div class="experiment-block">
-        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Cross-Embodiment</h3>
+        <h3 class="title is-4 has-text-warning has-text-weight-semibold">Overview of Diverse Tasks with Cross-Embodiment</h3>
         <figure class="experiment-feature cross-embodiment-feature">
           <div class="cross-embodiment-video-frame">
             <video controls muted playsinline loop preload="metadata">

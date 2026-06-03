@@ -139,6 +139,53 @@ img, video, iframe {
   border-radius: 20px;
 }
 
+.paper-figure {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+}
+
+.pipeline-figure {
+  width: 100%;
+}
+
+.robot-setup-figure {
+  width: 100%;
+}
+
+.adaptation-result-pair {
+  align-items: start;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.adaptation-result-item {
+  margin: 0;
+}
+
+.adaptation-result-title {
+  color: #333;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 0.65rem;
+  text-align: center;
+}
+
+.adaptation-result-pair img {
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
 .cool-title {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -223,6 +270,10 @@ section.hero.is-small.is-light {
   width: 75%;
 }
 
+.latest-experiments .simulation-results-visualization .title {
+  text-align: center;
+}
+
 .latest-experiments .experiment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -262,6 +313,45 @@ section.hero.is-small.is-light {
   aspect-ratio: 16 / 9;
   height: auto;
   object-fit: contain;
+}
+
+.latest-experiments .paper-figure {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+.demo-category {
+  margin-top: 1.5rem;
+}
+
+.demo-category-title {
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.demo-strip {
+  display: flex;
+  gap: 0.9rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding: 0.15rem 0 0.75rem;
+  scroll-snap-type: x proximity;
+  scrollbar-color: #b0f8d4 transparent;
+}
+
+.demo-strip video {
+  background: #f3f7f5;
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex: 0 0 clamp(220px, 31vw, 320px);
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  scroll-snap-align: start;
+  width: clamp(220px, 31vw, 320px);
 }
 
 .latest-experiments figcaption {
@@ -447,8 +537,17 @@ section.hero.is-small.is-light {
     font-size: 1.35rem;
   }
 
+  .adaptation-result-pair {
+    grid-template-columns: 1fr;
+  }
+
   .latest-experiments .experiment-grid.three-up {
     grid-template-columns: 1fr;
+  }
+
+  .demo-strip video {
+    flex-basis: min(78vw, 300px);
+    width: min(78vw, 300px);
   }
 
   .latest-experiments .experiment-card {
